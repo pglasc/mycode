@@ -2,7 +2,7 @@
 Learning to track my code
 # mycode (Project Title)
 
-I am learning to code for the first time!!
+I am learning to code for the first time!! I want to learn how to version control with git. 
 
 ## Getting Started
 
