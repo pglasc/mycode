@@ -1,0 +1,7 @@
+[aristaswitches]
+sw1 ansible_ssh_host=172.16.2.10
+sw2 ansible_ssh_host=172.16.2.10
+
+
+[aristaswitches:vars]
+ansible_connection=network=all

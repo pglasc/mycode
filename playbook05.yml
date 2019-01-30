@@ -1,0 +1,28 @@
+---
+    
+
+ - name: Arista config saver
+   hosts: all
+
+   tasks:
+   - name: Arista gather facts
+     eos_facts:
+       gather_subset: all
+     
+     name: Create a LOCAL directory to save our work in
+     file:
+     path: arista_config/
+     state: directory
+
+      name: copy running config to backup files
+      copy:
+        content: ansible_net_config
+        dest: "arista_config/"
+
+     name: Print out some of these vars
+     debug:
+       var: ansible_net_config
+
+   
+
+
